@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Circles</title> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<style type="text/css">
+	.circle{
+
+		width:200px;
+		height:200px;
+		border-radius: 50%;
+		float:left;
+		margin:50px;
+	}
+
+	#red-circle
+	{
+      background-color : red;
+
+
+	}
+
+	#blue-circle
+	{
+      background-color : blue;
+
+
+	}
+	#green-circle
+	{
+      background-color : green;
+
+
+	}
+</style>
+</head>
+<body>
+
+	<div class="circle" id="red-circle"></div>
+	<div class="circle" id="blue-circle"></div>
+	<div class="circle" id="green-circle"></div>
+	<script type="text/javascript">
+		
+		document.getElementById("red-circle").onclick = function() {
+			document.getElementById("red-circle").style.display = "none";
+		}
+
+		document.getElementById("blue-circle").onclick = function() {
+			document.getElementById("blue-circle").style.display = "none";
+		}
+
+		document.getElementById("green-circle-circle").onclick = function() {
+			document.getElementById("green-circle").style.display = "none";
+		}
+
+
+	</script>
+
+</body>
+</html>
